@@ -42,9 +42,8 @@ fi
 # get existant domains and users
 
 cd $DOMAINDIR
-for i in `find . -maxdepth 5 -type d -wholename '*/user/*' | sed  's/\user\///g''`
+for i in `find . -maxdepth 5 -type d -wholename '*/user/*' | sed  's/\user\///g'`
  do
-  #echo $i
   echo "create directories for sieve"
   cd $SIEVEDIR
    mkdir -p $i
